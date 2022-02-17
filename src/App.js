@@ -13,10 +13,12 @@ function App() {
   };
 
   return (
-    <div>
+    <>
+      <div id="error-modal-backdrop"></div>
+      <div id="error-modal-message"></div>
       <AddEmployee onAddEmployee={addEmployeeHandler} />
       <EmployeesList employees={employeesList}></EmployeesList>
-    </div>
+    </>
   );
 }
 
